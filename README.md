@@ -16,3 +16,14 @@ Before you begin, ensure you have the following dependencies installed:
    ```bash
    git clone https://github.com/your-username/QuantumQuill.git
    cd QuantumQuill
+2. **Install Vite React depndecies:**
+   ```bash
+   npm install
+3.**Visit Appwrite and create an account. Set up a new project and note down the project API endpoint and API key.
+
+   Update the Appwrite configuration in src/services/appwrite.js :**
+   ```bash
+   echo 'const appwrite = new Appwrite();' > src/services/appwrite.js
+   echo "appwrite.setEndpoint('YOUR_APPWRITE_ENDPOINT').setProject('YOUR_APPWRITE_PROJECT_ID');" >> src/services/appwrite.js
+   echo "appwrite.setKey('YOUR_APPWRITE_API_KEY');" >> src/services/appwrite.js
+
